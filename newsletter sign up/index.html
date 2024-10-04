@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/png">
+    <script defer src="app.js"></script>
+    <title>News letter</title>
+</head>
+<body>
+    <div class="card-sub" id="card-sub">
+        <section class="card__info" >
+            <h1 class="card-sub__heading">Stay updated!</h1>
+            <p class="card-sub__paragraph">Join 60,000+ product managers receiving monthly updates on:</p>
+            <ul class="card-sub__list">
+                <li class="card-sub__list-elem">Product discovery and building what matters</li>
+                <li class="card-sub__list-elem">Measuring to ensure updates are a success</li>
+                <li class="card-sub__list-elem">And much more</li>
+            </ul>
+            <form id="form" class="card-sub__form form" novalidate>
+                <section class="form__label">
+                    <label class="form__name" for="form__input">Email address</label>
+                    <span id="error-message" class="error-message">Valid email required</span>
+                </section>
+                <input class="form__input" type="email" placeholder="email@company.com" id="form__input" name="email" required>
+                <button class="form__button"  id="form__button" type="submit">Subscribe to monthly newsletter</button>
+            </form>            
+        </section>
+        <section class="card__images image">
+            <img class="image__desktop" src="assets/images/illustration-sign-up-desktop.svg" alt="">
+            <img src="assets/images/illustration-sign-up-mobile.svg" alt="" class="image__mobile">
+        </section>
+    </div>
+    <div class="card-confirmation" id="card-confirmation">
+        <img src="assets/images/icon-success.svg" alt="" class="card-confirmation__image">
+        <h1 class="card-confirmation__heading">Thanks for subscribing!</h1>
+        <p class="card-confirmation__paragraph">A confirmation email has been sent to <span id="result"></span>. 
+            Please open it and click the button inside to confirm your subscription.</p>
+        <button class="card-confirmation__button" id="card-confirmation__button">Dismiss message</button>
+    </div>
+</body>
+</html>
